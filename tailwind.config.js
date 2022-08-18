@@ -1,10 +1,9 @@
 module.exports = {
   prefix: 'tw-',
-  purge: [
-    './src/**/*.html',
-    './src/**/*.js',
+  darkMode: 'media',
+  content: [
+    './src/**/*.{ts,tsx,html}'
   ],
-  darkMode: false,
   theme: {
     extend: {},
   },

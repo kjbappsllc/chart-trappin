@@ -6,9 +6,11 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   mode: 'development',
   devServer: {
-    contentBase: path.join(__dirname, './src'),
+    static: {
+      directory: path.join(__dirname, './src'),
+    },
     port: 3000,
-    hotOnly: true,
+    hot: true,
     compress: true,
     open: false
   },

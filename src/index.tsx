@@ -1,8 +1,9 @@
 import 'tailwindcss/tailwind.css'
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render( 
-  <div> This is a new react app</div>, 
-  document.getElementById('root')
-);
+const container = document.getElementById('root');
+const root = createRoot(container!)
+root.render(
+  <div>ChartTrappin react</div>
+)
