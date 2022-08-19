@@ -4,5 +4,10 @@ import { createRoot } from 'react-dom/client';
 import { AppRouter } from './app.routing';
 
 const container = document.getElementById('root');
-const root = createRoot(container!);
-root.render(<AppRouter />);
+
+if (container != void 0) {
+  const root = createRoot(container);
+  root.render(<AppRouter />);
+} else {
+  console.error('Invalid root node for react to bind to');
+}
