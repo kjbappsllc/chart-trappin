@@ -74,7 +74,7 @@ export const NavMenuBar = () => {
     },
   ];
   return (
-    <nav id="header" className="z-30 py-6 px-6 flex justify-between items-center bg-white sticky">
+    <nav id="header" className="z-30 py-6 relative px-6 flex justify-between items-center bg-white">
       <HeaderLogo />
       <NavMenuList items={listItems} />
       <ActionButtons />
