@@ -4,7 +4,7 @@ import { NavMenuBar } from './components/nav-menu-bar';
 
 export const LandingPage = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex h-screen flex-col">
       <NavMenuBar />
       <HeaderContent />
     </div>
