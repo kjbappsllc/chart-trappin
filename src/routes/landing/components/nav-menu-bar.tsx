@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { VertDotsIcon } from '../../../shared/ui/icons';
 
-interface NavMenuListItem {
+export interface NavMenuListItem {
   name: string;
   sectionId: string;
 }
-interface NavMenuListProps {
+
+export interface NavMenuListProps {
   items: NavMenuListItem[];
 }
 
@@ -26,12 +27,12 @@ const NavMenuList = ({ items }: NavMenuListProps) => {
   const listItems = items.map((item, index) => {
     const spacer =
       index !== items.length - 1 ? (
-        <VertDotsIcon className="w-4 h-4 current-fill" />
+        <VertDotsIcon className="w-4 h-4 current-fill" fill='none' stroke='currentColor'/>
       ) : null;
     return (
       <React.Fragment key={index}>
         <li>
-          <a className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4">{item.name}</a>
+          <a className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer">{item.name}</a>
         </li>
         <li>{spacer}</li>
       </React.Fragment>
@@ -47,39 +48,21 @@ const NavMenuList = ({ items }: NavMenuListProps) => {
 const ActionButtons = () => {
   return (
     <>
-      <a className="hidden lg:inline-block lg:mr-5 lg:ml-auto py-2 px-6 bg-gray-100 hover:bg-gray-200 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200">
+      <a className="hidden lg:inline-block lg:mr-5 lg:ml-auto py-2 px-6 bg-gray-100 hover:bg-gray-200 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200 hover:cursor-pointer">
         Join Us
       </a>
-      <a className="hidden lg:inline-block py-2 px-6 bg-pink-500 hover:bg-pink-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200">
+      <a className="hidden lg:inline-block py-2 px-6 bg-pink-500 hover:bg-pink-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200 hover:cursor-pointer">
         Contact
       </a>
     </>
   );
 };
 
-export const NavMenuBar = () => {
-  const listItems: NavMenuListItem[] = [
-    {
-      name: 'About Us',
-      sectionId: '#About',
-    },
-    {
-      name: 'Testimonials',
-      sectionId: '#Testimonials',
-    },
-    {
-      name: 'Teachings',
-      sectionId: '#Teachings',
-    },
-    {
-      name: 'Courses',
-      sectionId: '#Courses',
-    },
-  ];
+export const NavMenuBar = ({ items }: NavMenuListProps) => {
   return (
     <nav id="header" className="z-30 py-6 px-6 flex justify-between items-center bg-white sticky top-0">
       <HeaderLogo />
-      <NavMenuList items={listItems} />
+      <NavMenuList items={items} />
       <ActionButtons />
     </nav>
   );
