@@ -1,4 +1,16 @@
-import { NavMenuListItem } from "./components/nav-menu-bar";
+
+export interface SectionProps {
+  sectionId: string;
+}
+
+export interface NavMenuListItem {
+  name: string;
+  sectionId: string;
+}
+
+export interface NavMenuListProps {
+  items: NavMenuListItem[];
+}
 
 export const navListItems: NavMenuListItem[] = [
   {

@@ -39,13 +39,20 @@ const HeadingRightPanel = () => {
 
 export const HeaderContent = () => {
   return (
-    <div className="pt-12 lg:pt-20 pb-20 bg-gray-100 flex-grow">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-wrap">
-          <HeadingLeftPanel />
-          <HeadingRightPanel />
+    <>
+      <div className="pt-12 lg:pt-20 bg-gray-50 rounded-br-6xl pb-20">
+        <div className="container mx-auto px-16 py-12">
+          <div className="flex flex-wrap">
+            <HeadingLeftPanel />
+            <HeadingRightPanel />
+          </div>
         </div>
       </div>
-    </div>
+      <div className="mr-for-radius">
+        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+        </svg>
+      </div>
+    </>
   );
 };

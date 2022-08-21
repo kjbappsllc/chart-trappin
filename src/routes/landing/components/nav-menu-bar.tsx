@@ -1,15 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { VertDotsIcon } from '../../../shared/ui/icons';
-
-export interface NavMenuListItem {
-  name: string;
-  sectionId: string;
-}
-
-export interface NavMenuListProps {
-  items: NavMenuListItem[];
-}
+import { NavMenuListProps } from '../landing.view-model';
 
 const HeaderLogo = () => (
   <div className="flex items-center h-12">
@@ -27,12 +19,14 @@ const NavMenuList = ({ items }: NavMenuListProps) => {
   const listItems = items.map((item, index) => {
     const spacer =
       index !== items.length - 1 ? (
-        <VertDotsIcon className="w-4 h-4 current-fill" fill='none' stroke='currentColor'/>
+        <VertDotsIcon className="w-4 h-4 current-fill" fill="none" stroke="currentColor" />
       ) : null;
     return (
       <React.Fragment key={index}>
         <li>
-          <a className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer">{item.name}</a>
+          <a className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer">
+            {item.name}
+          </a>
         </li>
         <li>{spacer}</li>
       </React.Fragment>
@@ -60,7 +54,7 @@ const ActionButtons = () => {
 
 export const NavMenuBar = ({ items }: NavMenuListProps) => {
   return (
-    <nav id="header" className="z-30 py-6 px-6 flex justify-between items-center bg-white sticky top-0">
+    <nav id="header" className="z-30 py-6 px-6 flex relative justify-between items-center bg-white">
       <HeaderLogo />
       <NavMenuList items={items} />
       <ActionButtons />
