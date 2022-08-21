@@ -14,12 +14,12 @@ const HeadingLeftPanel = () => {
           </p>
         </div>
         <div>
-          <a className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200">
+          <button className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200">
             Get Started
-          </a>
-          <a className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200 text-blue-500">
+          </button>
+          <button className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200 text-blue-500">
             Our Discord
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -30,6 +30,7 @@ const HeadingRightPanel = () => {
   return (
     <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
       <img
+        alt="profit-saving"
         className="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none shadow-md"
         src="assets/profit-saving.png"
       />

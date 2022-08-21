@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import './index.scss'
+import './index.scss';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { AppRouter } from './app.routing';

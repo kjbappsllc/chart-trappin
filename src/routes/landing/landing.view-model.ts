@@ -1,9 +1,8 @@
-
 export const enum SectionId {
-  Testimonials="testimonials",
-  About="about",
-  Teachings="teachings",
-  Courses="courses"
+  Testimonials = 'testimonials',
+  About = 'about',
+  Teachings = 'teachings',
+  Courses = 'courses',
 }
 
 export interface SectionProps {
