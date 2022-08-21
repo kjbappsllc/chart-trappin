@@ -1,4 +1,11 @@
 
+export const enum SectionId {
+  Testimonials="testimonials",
+  About="about",
+  Teachings="teachings",
+  Courses="courses"
+}
+
 export interface SectionProps {
   sectionId: string;
 }
@@ -12,21 +19,23 @@ export interface NavMenuListProps {
   items: NavMenuListItem[];
 }
 
+const toHref = (id: SectionId) => '#' + id;
+
 export const navListItems: NavMenuListItem[] = [
   {
     name: 'About Us',
-    sectionId: '#About',
+    sectionId: toHref(SectionId.About),
   },
   {
     name: 'Testimonials',
-    sectionId: '#Testimonials',
+    sectionId: toHref(SectionId.Testimonials),
   },
   {
     name: 'Teachings',
-    sectionId: '#Teachings',
+    sectionId: toHref(SectionId.Teachings),
   },
   {
     name: 'Courses',
-    sectionId: '#Courses',
+    sectionId: toHref(SectionId.Courses),
   },
 ];

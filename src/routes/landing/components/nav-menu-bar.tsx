@@ -24,7 +24,7 @@ const NavMenuList = ({ items }: NavMenuListProps) => {
     return (
       <React.Fragment key={index}>
         <li>
-          <a className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer">
+          <a href={item.sectionId} className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer scroll-smooth">
             {item.name}
           </a>
         </li>
