@@ -25,19 +25,21 @@ const TestimonialNavigation = () => {
 const TestimonialContent = () => {
   return (
     <div className="flex w-full relative">
-      <div className="mb-4 w-full lg:w-1/3 px-3">
-        <div className="p-5 bg-white shadow rounded">
-          Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+      <div className="flex flex-wrap justify-center mx-auto">
+        <div className="mb-4 w-full lg:w-1/3 px-3">
+          <div className="p-5 bg-white shadow rounded">
+            Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+          </div>
         </div>
-      </div>
-      <div className="mb-4 w-full lg:w-1/3 px-3">
-        <div className="p-5 bg-white shadow rounded">
-          Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+        <div className="mb-4 w-full lg:w-1/3 px-3">
+          <div className="p-5 bg-white shadow rounded">
+            Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+          </div>
         </div>
-      </div>
-      <div className="mb-4 w-full lg:w-1/3 px-3">
-        <div className="p-5 bg-white shadow rounded">
-          Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+        <div className="mb-4 w-full lg:w-1/3 px-3">
+          <div className="p-5 bg-white shadow rounded">
+            Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis viverra sollicitudin.
+          </div>
         </div>
       </div>
     </div>

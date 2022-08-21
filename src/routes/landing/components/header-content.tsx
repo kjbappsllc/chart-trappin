@@ -40,8 +40,8 @@ const HeadingRightPanel = () => {
 export const HeaderContent = () => {
   return (
     <>
-      <div className="pt-12 lg:pt-20 bg-gray-50 rounded-br-6xl pb-20">
-        <div className="container mx-auto px-16 py-12">
+      <div className="pt-28 lg:pt-32 bg-gray-50 rounded-br-6xl pb-20">
+        <div className="container mx-auto px-16 py-12 my-4">
           <div className="flex flex-wrap">
             <HeadingLeftPanel />
             <HeadingRightPanel />

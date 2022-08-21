@@ -54,7 +54,7 @@ const ActionButtons = () => {
 
 export const NavMenuBar = ({ items }: NavMenuListProps) => {
   return (
-    <nav id="header" className="z-30 py-6 px-6 flex relative justify-between items-center bg-white">
+    <nav id="header" className="z-30 top-0 py-6 px-6 flex fixed w-full justify-between items-center bg-white shadow-sm">
       <HeaderLogo />
       <NavMenuList items={items} />
       <ActionButtons />
