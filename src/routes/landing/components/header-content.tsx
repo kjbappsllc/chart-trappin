@@ -1,3 +1,5 @@
+import ProfitSavingPng from '../../../assets/profit-saving.png'
+
 const HeadingLeftPanel = () => {
   return (
     <div className="w-full lg:w-1/2 px-4 mb-12 md:mb-20 flex items-center lg:mb-0">
@@ -32,7 +34,7 @@ const HeadingRightPanel = () => {
       <img
         alt="profit-saving"
         className="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none shadow-md"
-        src="assets/profit-saving.png"
+        src={ProfitSavingPng}
       />
     </div>
   );
