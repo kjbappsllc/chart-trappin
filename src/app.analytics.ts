@@ -14,3 +14,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+console.log('Analytics Included In Project: ', analytics.app.name)
