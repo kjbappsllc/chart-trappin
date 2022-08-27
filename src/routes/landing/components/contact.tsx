@@ -18,11 +18,7 @@ const FormContent = () => {
           placeholder="Message"
         />
       </div>
-      <div className="flex justify-between items-center">
-        <label>
-          <input className="mr-3" type="checkbox" />
-          <span className="text-sm font-semibold">I agree to terms and conditions</span>
-        </label>
+      <div className="flex justify-center items-center">
         <button className="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-pink-500 hover:bg-pink-700 text-white font-bold leading-loose transition duration:200">
           Email Us
         </button>
