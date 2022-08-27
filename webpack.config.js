@@ -4,7 +4,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
-  mode: 'development',
   devServer: {
     static: {
       directory: path.join(__dirname, './src'),

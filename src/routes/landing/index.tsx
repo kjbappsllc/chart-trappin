@@ -9,7 +9,7 @@ import { navListItems, SectionId } from './landing.view-model';
 export const LandingPage = () => {
   return (
     <div className="w-full flex flex-col">
-      <section className="w-full lg:h-screen bg-white skewed-bottom-right">
+      <section className="w-full bg-white">
         <NavMenuBar items={navListItems} />
         <HeaderContent />
       </section>
