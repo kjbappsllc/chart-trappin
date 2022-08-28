@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { VertDotsIcon } from '../../../shared/ui/icons';
 import { NavMenuListProps } from '../landing.view-model';
+import LogoPng from '../../../assets/logo.png'
 
 const HeaderLogo = () => (
   <div className="flex items-center h-12">
-    <img alt="logo" className="h-8 inline fill-current" src="assets/logo.png" />
+    <img alt="logo" className="h-8 inline fill-current" src={LogoPng} />
     <Link
       to="/"
       className="pl-3 text-black no-underline hover:no-underline font-bold text-2xl lg:text-2xl leading-none"
