@@ -1,6 +1,7 @@
 name: Firebase Hosting Preview Pipeline
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
