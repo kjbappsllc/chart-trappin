@@ -1,4 +1,5 @@
 import { SectionProps } from '../landing.view-model';
+import ContactUsPng from '../../../assets/contact-us.png' 
 
 const FormContent = () => {
   return (
@@ -35,7 +36,7 @@ export const ContactSection = ({ sectionId }: SectionProps) => {
           className="mx-auto rounded-3xl md:rounded-br-none shadow-md"
           alt=""
           title="https://iconscout.com/contributors/delesign"
-          src="assets/contact-us.png"
+          src={ContactUsPng}
         />
       </div>
       <div className="lg:absolute inset-0 flex justify-center items-center ml-auto w-full lg:w-3/5 bg-white">
