@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { VertDotsIcon } from '../../../shared/ui/icons';
 import { NavMenuListProps } from '../landing.view-model';
-import LogoPng from '../../../assets/logo.png'
+import LogoPng from '../../../assets/logo.png';
 
 const HeaderLogo = () => (
   <div className="flex items-center h-12">
@@ -16,6 +16,11 @@ const HeaderLogo = () => (
   </div>
 );
 
+const scrollToSection = (sectionId: string) => {
+  const section = document.querySelector(`${sectionId}`);
+  section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 const NavMenuList = ({ items }: NavMenuListProps) => {
   const listItems = items.map((item, index) => {
     const spacer =
@@ -25,12 +30,12 @@ const NavMenuList = ({ items }: NavMenuListProps) => {
     return (
       <React.Fragment key={index}>
         <li>
-          <a
-            href={item.sectionId}
+          <button
             className="text-gray-500 hover:text-gray-900 hover:underline hover:underline-offset-4 hover:cursor-pointer scroll-smooth"
+            onClick={() => scrollToSection(item.sectionId)}
           >
             {item.name}
-          </a>
+          </button>
         </li>
         <li>{spacer}</li>
       </React.Fragment>
@@ -49,7 +54,7 @@ const ActionButtons = () => {
       <button className="hidden lg:inline-block lg:mr-5 lg:ml-auto py-2 px-6 bg-gray-100 hover:bg-gray-200 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200 hover:cursor-pointer">
         Join Us
       </button>
-      <button className="hidden lg:inline-block py-2 px-6 bg-pink-500 hover:bg-pink-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200 hover:cursor-pointer">
+      <button className="hidden lg:inline-block py-2 px-6 bg-primary-400 hover:bg-primary-500 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200 hover:cursor-pointer">
         Contact
       </button>
     </>
@@ -58,10 +63,15 @@ const ActionButtons = () => {
 
 export const NavMenuBar = ({ items }: NavMenuListProps) => {
   return (
-    <nav id="header" className="z-30 top-0 py-6 px-6 flex fixed w-full justify-between items-center bg-white shadow-sm">
-      <HeaderLogo />
-      <NavMenuList items={items} />
-      <ActionButtons />
-    </nav>
+    <div className="w-full bg-white">
+      <nav
+        id="header"
+        className="z-30 top-0 py-6 px-6 flex fixed w-full justify-between items-center bg-white shadow-sm"
+      >
+        <HeaderLogo />
+        <NavMenuList items={items} />
+        <ActionButtons />
+      </nav>
+    </div>
   );
 };

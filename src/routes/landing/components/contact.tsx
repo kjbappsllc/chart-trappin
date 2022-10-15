@@ -1,5 +1,5 @@
 import { SectionProps } from '../landing.view-model';
-import ContactUsPng from '../../../assets/contact-us.png' 
+import ContactUsPng from '../../../assets/contact-us.png';
 
 const FormContent = () => {
   return (
@@ -20,7 +20,7 @@ const FormContent = () => {
         />
       </div>
       <div className="flex justify-center items-center">
-        <button className="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-pink-500 hover:bg-pink-700 text-white font-bold leading-loose transition duration:200">
+        <button className="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-primary-400 hover:bg-primary-500 text-white font-bold leading-loose transition duration:200">
           Email Us
         </button>
       </div>

@@ -7,6 +7,12 @@ module.exports = {
     extend: {
       borderRadius: {
         '6xl': '6rem'
+      },
+      colors: {
+        primary: {
+          400: '#f13cd4',
+          500: '#E71CCC'
+        }
       }
     }
   },

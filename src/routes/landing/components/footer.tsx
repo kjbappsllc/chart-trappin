@@ -2,7 +2,7 @@ import { FacebookIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '../../../s
 
 export const Footer = () => {
   return (
-    <div className="bg-pink-500 flex py-4">
+    <div className="bg-primary-400 flex py-4">
       <div className="text-center container flex justify-center flex-col items-center mx-auto mt-8">
         <div className="flex justify-center space-x-6">
           <FacebookIcon className="w-6 h-6" stroke="white" fill="white" />

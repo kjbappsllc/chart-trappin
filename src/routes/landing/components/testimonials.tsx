@@ -8,7 +8,7 @@ const TestimonialNavigation = () => {
         <ArrowLeftIcon className="w-6 h-6" />
       </button>
       <div className="mb-10 max-w-lg text-center mx-auto">
-        <span className="text-pink-500 font-bold">Testimonials</span>
+        <span className="text-primary-400 font-bold">Testimonials</span>
         <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-head">What do others think about us?</h2>
       </div>
       <button className="hidden order-last bg-white p-4 rounded-full shadow-md text-pink-500 hover:text-pink-300 transition duration-200">
@@ -27,6 +27,7 @@ const TestimonialContent = () => {
             Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a
             pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis
             viverra sollicitudin.
+            <span className="flex mt-3 w-full">- Braxton</span>
           </div>
         </div>
         <div className="mb-4 w-full lg:w-1/3 px-3">
@@ -34,6 +35,7 @@ const TestimonialContent = () => {
             Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a
             pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis
             viverra sollicitudin.
+            <span className="flex mt-3 w-full">- Derrick</span>
           </div>
         </div>
         <div className="mb-4 w-full lg:w-1/3 px-3">
@@ -41,6 +43,7 @@ const TestimonialContent = () => {
             Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a
             pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis
             viverra sollicitudin.
+            <span className="flex mt-3 w-full">- Sump</span>
           </div>
         </div>
       </div>
