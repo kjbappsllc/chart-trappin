@@ -1,4 +1,4 @@
-import ProfitSavingPng from '../../../assets/profit-saving.png';
+import ProfitSavingPng from '../../../assets/business-invester.png';
 
 const HeadingLeftPanel = () => {
   return (
@@ -34,8 +34,9 @@ const HeadingRightPanel = () => {
     <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
       <img
         alt="profit-saving"
-        className="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none shadow-md"
+        className="h-96 w-auto max-w-lg object-contain rounded-3xl md:rounded-br-none shadow-md"
         src={ProfitSavingPng}
+        title="https://iconscout.com/illustration/business-investment-5915499 by Twin Rizki"
       />
     </div>
   );

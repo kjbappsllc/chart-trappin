@@ -26,15 +26,11 @@ export const navListItems: NavMenuListItem[] = [
     sectionId: toHref(SectionId.About),
   },
   {
-    name: 'Testimonials',
-    sectionId: toHref(SectionId.Testimonials),
-  },
-  {
-    name: 'Teachings',
-    sectionId: toHref(SectionId.Teachings),
-  },
-  {
     name: 'Courses',
     sectionId: toHref(SectionId.Courses),
+  },
+  {
+    name: 'Testimonials',
+    sectionId: toHref(SectionId.Testimonials),
   },
 ];
