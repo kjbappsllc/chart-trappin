@@ -11,7 +11,7 @@ export const Footer = () => {
           <TwitterIcon className="w-6 h-6" stroke="white" fill="white" />
         </div>
         <div className="text-white hover:underline mt-8 text-sm">
-          <a href="https://www.linkedin.com/in/keyshawn-butts/" target="_blank" rel="noopener noreferrer">
+          <a href="https://kjbapps.web.app" target="_blank" rel="noopener noreferrer">
             © Copyright {new Date().getFullYear()} ChartTrappin. Powered by Kjbappsllc
           </a>
         </div>
