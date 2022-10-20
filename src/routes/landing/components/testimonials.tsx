@@ -24,10 +24,8 @@ const TestimonialContent = () => {
       <div className="flex flex-wrap justify-center mx-auto">
         <div className="mb-4 w-full lg:w-1/3 px-3">
           <div className="p-5 bg-white shadow rounded">
-            Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla est aliquam. Phasellus tincidunt mi a
-            pellentesque fermentum. Quisque vitae erat iaculis, porttitor elit sed, viverra nisl. Maecenas facilisis
-            viverra sollicitudin.
-            <span className="flex mt-3 w-full">- Braxton</span>
+            I reached out to chart trapper wanting to learn about charts and forex. I only knew the basic terminology of forex. I left every session with a clear understanding about what chart trapper taught me. How he teaches is what helped the information given to me stick. He’s very relatable and makes learning about whichever subject we are on fun. He uses a lot of analogies and examples to help simplify a subject. I had zero knowledge of the cryptocurrency world. Now I have the confidence to research different cryptocurrencies on my own and even teach about it if someone were to ask. I can now predict the trends on cryptocurrencies because he taught me how to read a graph properly through regular forex. It’s really life changing because now I can jump in those conversations on both subjects while making money on the side. Charttrapper really made the whole experience fun and easy to pick up.
+            <span className="flex mt-3 w-full">- Quincy Taylor</span>
           </div>
         </div>
         <div className="mb-4 w-full lg:w-1/3 px-3">
