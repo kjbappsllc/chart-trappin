@@ -31,7 +31,7 @@ const TestimonialContent = () => {
         <div className="mb-4 w-full lg:w-1/3 px-3">
           <div className="p-5 bg-white shadow rounded">
             I wanna say it was late 2020 when Duronte 1st started explaining crypto to me. The way he explained how the blockchain in general works to the consensus of different networks really changed my outlook on crypto as a whole. Not only did he teach me the knowledge but he thought me the way to do my own due diligence when it came to looking for solid investments. With Duronte’s guidance I was also able to land a job at one of the worlds largest crypto firms. I can honestly credit my success in the crypto space to him.
-            <span className="flex mt-3 w-full">- Sump</span>
+            <span className="flex mt-3 w-full">- Justin Sumpter</span>
           </div>
         </div>
         <div className="mb-4 w-full lg:w-1/3 px-3">
